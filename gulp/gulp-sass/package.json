@@ -1,7 +1,6 @@
 {
   "name": "gulp-sass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "_abbrev@1.1.1@abbrev": "^1.1.1",
@@ -439,5 +438,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
