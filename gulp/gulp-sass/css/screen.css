@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.footer {
+  min-width: 1000px;
+  height: 265px;
+  background-color: #eeeeee;
+  margin-top: 60px; }
+  .footer .footerlogo {
+    text-align: center; }
+    .footer .footerlogo img {
+      padding: 0 5px; }
+  .footer .line {
+    width: 1000px;
+    height: 2px;
+    margin: 0 auto;
+    background: url(../../images/line_footer.gif) repeat-x;
+    margin-top: 30px; }
+  .footer .copyright {
+    font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    text-align: center;
+    padding: 27px;
+    color: #666; }
+  .footer .row1 {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px; }
+    .footer .row1 .column1 {
+      float: left; }
+      .footer .row1 .column1 a {
+        font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 34px;
+        line-height: 70px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #666;
+        cursor: pointer; }
+    .footer .row1 .column2 {
+      float: right; }
+      .footer .row1 .column2 img {
+        vertical-align: middle; }
+      .footer .row1 .column2 .span {
+        font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif;
+        -webkit-font-smoothing: antialiased;
+        padding-right: 34px;
+        line-height: 70px;
+        text-decoration: none;
+        font-size: 13px;
+        color: #666; }
+  .footer .row2 {
+    width: 1000px;
+    margin: 0 auto; }
+    .footer .row2 .number {
+      font-size: 36px;
+      -webkit-font-smoothing: antialiased;
+      font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif;
+      line-height: 50px;
+      color: #666;
+      padding-left: 135px; }
+    .footer .row2 .green {
+      float: left;
+      font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif;
+      -webkit-font-smoothing: antialiased;
+      padding-right: 28px;
+      font-size: 18px;
+      line-height: 50px;
+      color: #a7bd06; }
+    .footer .row2 .space {
+      width: 45px;
+      float: left;
+      height: 10px; }
+    .footer .row2 .raidus {
+      position: relative;
+      float: left;
+      position: relative;
+      margin-right: 15px;
+      width: 50px;
+      height: 50px; }
+      .footer .row2 .raidus .pad7 {
+        padding: 3px 5px; }
+      .footer .row2 .raidus .fr {
+        float: right;
+        margin: -36px 8px; }
+      .footer .row2 .raidus .tip4 {
+        position: absolute;
+        left: -4%;
+        top: -12px; }
+      .footer .row2 .raidus .tip3 {
+        width: 193px;
+        height: 90px;
+        border-radius: 8px;
+        position: absolute;
+        left: -66px;
+        top: -100px;
+        background: white;
+        border: 1px solid #ccc; }
+        .footer .row2 .raidus .tip3 .font12 {
+          float: right;
+          width: 95px;
+          padding: 10px 2px 20px 2px;
+          font-size: 12px;
+          margin: 0 auto;
+          -webkit-font-smoothing: antialiased;
+          font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif; }
+      .footer .row2 .raidus .tip2 {
+        position: absolute;
+        left: -10%;
+        top: -11px; }
+      .footer .row2 .raidus .tip1, .footer .row2 .raidus .tip2, .footer .row2 .raidus .tip3, .footer .row2 .raidus .tip4 {
+        display: none; }
+      .footer .row2 .raidus .tip1 {
+        width: 94px;
+        height: 108px;
+        border-radius: 8px;
+        position: absolute;
+        left: -25px;
+        top: -117px;
+        background: white;
+        border: 1px solid #ccc; }
+        .footer .row2 .raidus .tip1 .font12 {
+          text-align: center;
+          font-size: 12px;
+          margin: 0 auto;
+          -webkit-font-smoothing: antialiased;
+          font-family: "微软雅黑", "Lucida Grande", Verdana, Arial, Sans-Serif; }
+    .footer .row2 .wechat, .footer .row2 .wechat1, .footer .row2 .sina, .footer .row2 .sina1, .footer .row2 .android, .footer .row2 .iphone1, .footer .row2 .iphone, .footer .row2 .android1 {
+      display: block;
+      cursor: pointer;
+      width: 50px;
+      height: 50px; }
+    .footer .row2 .wechat {
+      background: url(../../images/download.png) no-repeat -17px -13px; }
+    .footer .row2 .wechat1 {
+      background: url(../../images/download.png) no-repeat -18px -72px; }
+    .footer .row2 .sina {
+      background: url(../../images/download.png) no-repeat -82px -13px; }
+    .footer .row2 .sina1 {
+      background: url(../../images/download.png) no-repeat -87px -73px; }
+    .footer .row2 .android {
+      background: url(../../images/download.png) no-repeat -315px -13px; }
+    .footer .row2 .iphone1 {
+      background: url(../../images/download.png) no-repeat -378px -81px; }
+    .footer .row2 .iphone {
+      background: url(../../images/download.png) no-repeat -380px -13px; }
+    .footer .row2 .android1 {
+      background: url(../../images/download.png) no-repeat -313px -80px; }
+
+/*# sourceMappingURL=maps/screen.css.map */
