@@ -1,0 +1,22 @@
+div
+{
+opacity: .8;
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+width:100px;
+height:100px;
+background:blue;
+-webkit-transition:width 2s;
+-o-transition:width 2s;
+-moz-transition:width 2s;
+transition:width 2s;
+
+}
+
+div:hover
+{
+width:300px;
+}
