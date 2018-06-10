@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			height: 100%;
+
+		}
+		.pWarp{
+			width: 200px;
+		}
+		.pWarp ol{
+			list-style: none;
+			    font-family: monospace;
+
+		}
+		
+
+		.pWarp {counter-reset:n;}
+		.pWarp li:before
+		{
+		counter-increment:n;
+		content: counter(n) "、 ";
+		margin-left: -27px;
+		}
+	</style>
+	
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<{include $viewpathNew.wap/activity/sem/register.tpl}>
+	<img src="./images/fuck.png" alt="">
+	<div class="pWarp">
+		<ol>
+			<li>我虽然是个中国人 但是我还要学习英语</li>
+			<li>我虽然是个中国人 但是我还要学习英语</li>
+			<li>我虽然是个中国人 但是我还要学习英语</li>
+		</ol>	
+	
+	
+	</div>
+</body>
+</html>

@@ -3,7 +3,8 @@ var px2rem = require('gulp-px2rem');
 
 gulp.task('default',function(){
 	var px2remOptions = {
-    	replace: true
+    	replace: true,
+    	// rootValue:37.5
 	};
 	 
 	var postCssOptions = {
