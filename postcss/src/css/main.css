@@ -1,0 +1,45 @@
+/* normalize selectors */
+h1{
+    /* reduce shorthand even further */
+    margin: 10px 20px 10px 20px;
+    /* reduce color values */
+    color: #ff0000;
+    /* remove duplicated properties */
+    font-weight: 400;
+    font-weight: 400;
+    /* reduce position values */
+    background-position: bottom right;
+    /* normalize wrapping quotes */
+    quotes: '«' "»";
+    /* reduce gradient parameters */
+    background: linear-gradient(to bottom, #ffe500 0%, #ffe500 50%, #121 50%, #121 100%);
+    /* replace initial values */
+    min-width: initial;
+}
+/* correct invalid placement */
+@charset "utf-8";/* normalize selectors */
+h1::before, h1:before {
+    /* reduce shorthand even further */
+    margin: 10px 20px 10px 20px;
+    /* reduce color values */
+    color: #ff0000;
+    /* remove duplicated properties */
+    font-weight: 400;
+    font-weight: 400;
+    /* reduce position values */
+    background-position: bottom right;
+    /* normalize wrapping quotes */
+    quotes: '«' "»";
+    /* reduce gradient parameters */
+    background: linear-gradient(to bottom, #ffe500 0%, #ffe500 50%, #121 50%, #121 100%);
+    /* replace initial values */
+    min-width: initial;
+}
+/* correct invalid placement */
+@charset "utf-8";
+.example {
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}

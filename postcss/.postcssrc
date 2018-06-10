@@ -1,0 +1,12 @@
+{
+  "modules": true,
+  "plugins": {
+    "autoprefixer": {
+      "grid": true,
+      "browsers": ["last 2 versions"]
+    },
+    "cssnano":{
+      "preset": "default",
+    }
+  }
+}
