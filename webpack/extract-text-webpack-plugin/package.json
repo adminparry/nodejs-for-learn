@@ -1426,7 +1426,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "webpack":"webpack --config webpack.config.second.js",
+    "first":"webpack --config webpack.config.first.js",
+    "second":"webpack --config webpack.config.second.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
