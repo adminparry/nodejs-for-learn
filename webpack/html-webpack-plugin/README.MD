@@ -27,7 +27,7 @@ find scripts
 ## package.json
 
 ```javascript
-"build":"webpack --config "
+"build":"webpack --config build/webpack.config.js"
 ```
 
 ## webpack.config.js
