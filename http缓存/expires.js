@@ -1,4 +1,6 @@
 const http = require('http');
+
+
 function squenceRefer(obj){
 	 // Note: cache should not be re-used by repeated calls to JSON.stringify.
 var cache = [];
@@ -17,14 +19,18 @@ cache = null; // Enable garbage collection
 
 return str; 
 }
+
+
 const server = http.createServer((req, res) => {
   const ip = res.socket.remoteAddress;
   const port = res.socket.remotePort;
 
 
  
-  res.writeHead(304, { 'Cache-Control': 'no-cache' });
- console.log('once')
-  res.end(squenceRefer(res));
+ res.writeHead(304, { 'Cache-Control': 'no-cache' });
+ // console.log(squenceRefer(req));
+
+
+  res.end('666');
 
 }).listen(3000);
