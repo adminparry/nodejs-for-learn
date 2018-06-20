@@ -97,6 +97,17 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 
 /***/ }),
 
+/***/ "./src/css/main.less":
+/*!***************************!*\
+  !*** ./src/css/main.less ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/css/main.less?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -105,7 +116,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("\n\n__webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n\n__webpack_require__(/*! ./css/main.less */ \"./src/css/main.less\");\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

@@ -26,9 +26,9 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.(css|sass|less|styl)$/,
+                test: /\.(css|sass|sss|stylus|less)$/,
                 use: extractCSS.extract([
-                    'css-loader', 'postcss-loader',
+                    'css-loader', 'postcss-loader'
                 ])
             }
         ]

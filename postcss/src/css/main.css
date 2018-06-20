@@ -1,3 +1,23 @@
+.pic-txts {
+  text-align: left;
+  border:1px solid #ddd; /*px*/
+  border-radius: 5PX;
+  width: rem(690px);
+  display: block;
+}
+.foo {
+    background-image: image-set(url(http://img/test.png) 1x,
+                                url(http://img/test-2x.png) 2x,
+                                url(http://my-img-print.png) 600dpi);
+}
+.selector {
+  font-size: dpr(32px);
+  width: rem(75px);
+  line-height: 3;
+  /* replace all @[1-3]x in urls: `/a/@2x/x.png`, `/a@2x/x.png` or `/a/x@2x.png` */
+  background-image: url(/images/qr@2x.png);
+}
+
 /* normalize selectors */
 h1{
     /* reduce shorthand even further */

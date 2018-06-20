@@ -2,8 +2,18 @@ var stream = require('stream');
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
+var util = require('util');
 
+function MakeReadStream(chunk){
+	stream.Readable.call(this);
+	this.chunk = chunk;
+}
+util.inherits(MakeReadStream,stream.Readable);
 
+MakeReadStream.prototype._read = function(){
+	this.push(new Buffer(this.chunk,'binary'));
+	this.push(null);
+}
 
 const options = {
   hostname: 'www.zhinengshe.com',
@@ -19,32 +29,20 @@ const dir = './images';
 const namespace = {
 	length:77
 }
+
 for (let i = 0; i < namespace.length; i++) {
-	options.path = `/works/3525/img/${i}.jpg`;
+		options.path = `/works/3525/img/${i}.jpg`;
 	
 		requestGetAsync(options).then(chunk=>{
 			 // console.log(`响应主体: ${chunk}`);
-			 writeFileAsync(path.resolve(__dirname,'images/'+i+'.jpg'),chunk);
-			 i++;
+			 // writeFileAsync(path.resolve(__dirname,'images/'+i+'.jpg'),chunk);
+			
+			 new MakeReadStream(chunk).pipe(fs.createWriteStream('images/'+i+'.jpg',{encoding:'binary'}));
+			 
 		}).catch(e=>{
 			console.log(e.message)
 		});
 };
-// let i = 0;
-// while(namespace.length--){
-
-// 		options.path = `/works/3525/img/${namespace.length}.jpg`;
-// 		console.log(namespace.length)
-// 		requestGetAsync(options).then(chunk=>{
-// 			 // console.log(`响应主体: ${chunk}`);
-// 			 writeFileAsync(path.resolve(__dirname,'images/'+i+'.jpg'),chunk);
-// 			 i++;
-// 		}).catch(e=>{
-// 			console.log(e.message)
-// 		});
-	
-	
-// }
 
 function writeFileAsync(file,data,options,callback){
 	fs.mkdir('images', 0777, function(err){

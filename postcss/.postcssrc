@@ -1,12 +1,21 @@
 {
   "modules": true,
+
   "plugins": {
+    "precss":{
+
+    },
     "autoprefixer": {
       "grid": true,
       "browsers": ["last 2 versions"]
     },
     "cssnano":{
       "preset": "default",
+    },
+   
+    "postcss-flexible":{
+        remUnit: 75
     }
+
   }
 }
