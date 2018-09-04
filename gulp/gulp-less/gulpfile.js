@@ -22,3 +22,6 @@ gulp.task('default',function(){
 	gulp.watch(PATH.input, ['less']);
 })
 
+gulp.task('watch',()=>{
+	gulp.watch(PATH.less,['default'])
+})
