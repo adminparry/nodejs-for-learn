@@ -1,0 +1,34 @@
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+.img1 {
+	background-image: url(spritesheet.png);
+	background-position: -0px -0px;
+}
+
+.img2 {
+	background-image: url(spritesheet.png);
+	background-position: -0px -99px;
+}
+
+.img3 {
+	background-image: url(spritesheet.png);
+	background-position: -60px -0px;
+}
+
+.img4 {
+	background-image: url(spritesheet.png);
+	background-position: -120px -0px;
+}
+
+.img5 {
+	background-image: url(spritesheet.png);
+	background-position: -180px -0px;
+}

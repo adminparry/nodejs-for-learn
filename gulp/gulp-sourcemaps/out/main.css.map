@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,GACC,YAAa,aAAc,gBAAkB,CAC7C,AACD,GACC,WAAY,YAAa,kBAAmB,eAAiB,CAC7D","file":"main.css","sourcesContent":[".a{\n\twidth: 200px;height: 200px;background: green;\n}\n.b{\n\twidth: 50px;height: 50px;border-radius: 50%;background: #ccc;\n}"]}

@@ -1,0 +1,1 @@
+document.write('i`m only a test')

@@ -1,0 +1,15 @@
+div
+{
+opacity: .8;
+display: flex;
+width:100px;
+height:100px;
+background:blue;
+transition:width 2s;
+
+}
+
+div:hover
+{
+width:300px;
+}
