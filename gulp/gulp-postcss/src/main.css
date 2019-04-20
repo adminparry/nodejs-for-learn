@@ -1,7 +1,0 @@
-@import url(fuck.css);
-
-.b{
-	width: 200px;height: 200px;
-	background: url(./aaa.png);
-	background-image: image-set("test.png" 1x, "test-2x.png" 2x, "test-print.png" 600dpi )
-}

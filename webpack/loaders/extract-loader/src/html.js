@@ -1,3 +1,0 @@
-<{<$scoprt>}>
-require('./index.css');
-
