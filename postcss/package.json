@@ -553,7 +553,7 @@
     "md5.js": "^1.3.4",
     "mimic-fn": "^1.2.0",
     "miller-rabin": "^4.0.1",
-    "minimist": "^0.0.8",
+    "minimist": "^1.2.5",
     "minimalistic-assert": "^1.0.1",
     "minimalistic-crypto-utils": "^1.0.1",
     "minimatch": "^3.0.4",
