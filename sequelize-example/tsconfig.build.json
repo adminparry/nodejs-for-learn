@@ -1,0 +1,5 @@
+{
+    "compilerOptions": {"watch": true},
+    "extends": "./tsconfig.json",
+    "exclude": ["node_modules"]
+}

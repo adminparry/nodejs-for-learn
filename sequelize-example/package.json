@@ -1,0 +1,30 @@
+{
+  "name": "sequelize-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:h": "tsc -h",
+    "tsc:init": "tsc --init",
+    "tsc:exec": "tsc -p tsconfig.build.json",
+    "nodemon": "nodemon",
+    "start": "concurrently --handle-input  \"wait-on dist/main.js && nodemon\" \"tsc -p tsconfig.build.json\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/sequelize": "^4.28.3",
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.2",
+    "wait-on": "^3.2.0"
+  },
+  "dependencies": {
+    "mysql2": "^1.6.5",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.9.2",
+    "sequelize-typescript": "^0.6.11"
+  }
+}

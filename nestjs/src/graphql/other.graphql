@@ -1,0 +1,14 @@
+type Fuck {
+    id: Int!
+    author: String
+    isbn: String
+    name: String
+    createdAt: String
+    updatedAt: String
+    deletedAt: String
+}
+type Query {
+    user: String,
+    fuck: [Fuck],
+    fuckById(id: Int!): Fuck
+}

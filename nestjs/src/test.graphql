@@ -1,0 +1,14 @@
+type Book {
+    title: String
+    author: String
+}
+type Query {
+    books: [Book],
+    sayHello(name: String!):String
+}
+type Mutation {
+    pubMessage(msg: String): String
+}
+type Subscription {
+    subMessage: String
+}

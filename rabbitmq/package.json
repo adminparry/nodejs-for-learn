@@ -1,0 +1,22 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "co": "^4.6.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-route": "^3.2.0",
+    "mongoose": "^5.5.3",
+    "node-uuid": "^1.4.8",
+    "when": "^3.7.8"
+  }
+}
