@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str = `
+    <%if(user){%>
+        hello <%=user.name%>
+    <%}else{%>
+        hello guest
+    <%}%>
+    <ul>
+    <%for(let i=0;i<total;i++){%>
+        <li><%=i%></li>
+    <%}%>
+    </ul>
+    `;
+    let option = { user: { name: 'test' } , total: 10 };
+
+    function compiler(options, str){
+        let head = "let template = ``; \n with(options){\n template+=`";
+        str = str.replace(/<%=([\s\S]+?)%>/g, (a,b) => {
+            return "${" + b + "}"
+        });
+
+        str = str.replace(/<%([\s\S]+?)%>/g, (a,b) => {
+            return "`;\n"+ b +"\n;template+=`"
+        })
+        let tail = "`}\n return template; ";
+        let html = head + str + tail;
+        let fn = new Function('options', html);
+
+        return fn(options)
+    }
+    let result = compiler(option, str);
+    document.write(result);
+</script>
+</html>
