@@ -7,6 +7,5 @@ npm install --save socket.io socket.io-client
 
 ## demo
 
-``` javascript
+https://github.com/adminparry/nodejs-for-learn/tree/master/socket.io
 
-```
