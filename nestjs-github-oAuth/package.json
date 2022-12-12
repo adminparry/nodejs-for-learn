@@ -23,7 +23,7 @@
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "@nestjs/passport": "^6.1.0",
-    "@nestjs/platform-express": "^6.0.0",
+    "@nestjs/platform-express": "^9.2.1",
     "connect-session-sequelize": "^6.0.0",
     "cookie-parser": "^1.4.4",
     "express-session": "^1.16.2",
